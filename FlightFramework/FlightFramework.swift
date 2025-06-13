@@ -11,7 +11,7 @@ import FlightSwaggerClient
 import TravelCommon
 
 
-class FlightSession {
+public class FlightSession {
     private var user = User.shared
     private var searchId: String?
     private let appCode: String
