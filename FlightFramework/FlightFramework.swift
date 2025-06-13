@@ -16,7 +16,7 @@ public class FlightSession {
     private var searchId: String?
     private let appCode: String
     
-    init(appCode: String) {
+    public init(appCode: String) {
         self.appCode = appCode
     }
 
