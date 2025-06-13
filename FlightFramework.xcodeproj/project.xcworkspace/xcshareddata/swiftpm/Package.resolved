@@ -1,0 +1,24 @@
+{
+  "originHash" : "74a45d398d66c67576e68b04861ae711a6b82fdc4871d2e1a144d23f62305b9b",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "513364f870f6bfc468f9d2ff0a95caccc10044c5",
+        "version" : "5.10.2"
+      }
+    },
+    {
+      "identity" : "flightswaggerclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Lascade-Co/FlightSwaggerClient",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d13792cf0a428f3270c5c3cded718f0a8cc0fe68"
+      }
+    }
+  ],
+  "version" : 3
+}

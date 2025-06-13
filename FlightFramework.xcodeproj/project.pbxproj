@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0F58762DFC88F400F1B60C /* FlightSwaggerClient in Frameworks */ = {isa = PBXBuildFile; productRef = 1C0F58752DFC88F400F1B60C /* FlightSwaggerClient */; };
 		1CE08D4B2DFC604D00184098 /* FlightFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE08D3F2DFC604D00184098 /* FlightFramework.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0F58762DFC88F400F1B60C /* FlightSwaggerClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +108,7 @@
 			);
 			name = FlightFramework;
 			packageProductDependencies = (
+				1C0F58752DFC88F400F1B60C /* FlightSwaggerClient */,
 			);
 			productName = FlightFramework;
 			productReference = 1CE08D3F2DFC604D00184098 /* FlightFramework.framework */;
@@ -161,6 +164,9 @@
 			);
 			mainGroup = 1CE08D352DFC604D00184098;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1C0F58742DFC88F400F1B60C /* XCRemoteSwiftPackageReference "FlightSwaggerClient" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1CE08D402DFC604D00184098 /* Products */;
 			projectDirPath = "";
@@ -471,6 +477,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C0F58742DFC88F400F1B60C /* XCRemoteSwiftPackageReference "FlightSwaggerClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Lascade-Co/FlightSwaggerClient";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C0F58752DFC88F400F1B60C /* FlightSwaggerClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C0F58742DFC88F400F1B60C /* XCRemoteSwiftPackageReference "FlightSwaggerClient" */;
+			productName = FlightSwaggerClient;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1CE08D362DFC604D00184098 /* Project object */;
 }
