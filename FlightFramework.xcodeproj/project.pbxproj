@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C0F58762DFC88F400F1B60C /* FlightSwaggerClient in Frameworks */ = {isa = PBXBuildFile; productRef = 1C0F58752DFC88F400F1B60C /* FlightSwaggerClient */; };
+		1C0F587B2DFCB81700F1B60C /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0F587A2DFCB80800F1B60C /* Package.swift */; };
 		1CE08D4B2DFC604D00184098 /* FlightFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE08D3F2DFC604D00184098 /* FlightFramework.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +23,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C0F587A2DFCB80800F1B60C /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		1CE08D3F2DFC604D00184098 /* FlightFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlightFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE08D4A2DFC604D00184098 /* FlightFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -62,6 +64,7 @@
 		1CE08D352DFC604D00184098 = {
 			isa = PBXGroup;
 			children = (
+				1C0F587A2DFCB80800F1B60C /* Package.swift */,
 				1CE08D412DFC604D00184098 /* FlightFramework */,
 				1CE08D4E2DFC604D00184098 /* FlightFrameworkTests */,
 				1CE08D402DFC604D00184098 /* Products */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0F587B2DFCB81700F1B60C /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
