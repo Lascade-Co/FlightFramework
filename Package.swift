@@ -10,7 +10,7 @@ import PackageDescription
 let package = Package(
     name: "FlightFramework",
     platforms: [
-        .iOS(.v13),
+        .iOS("16.0.0"),
         .macOS("14.0.0"),
     ],
     products: [
