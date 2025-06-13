@@ -12,24 +12,26 @@ import TravelCommon
 
 
 public class FlightSession {
-    private var user = User.shared
     private var searchId: String?
     private let appCode: String
     
     public init(appCode: String) {
         self.appCode = appCode
     }
-
+    
     
     public func getAutocomplete(query: String) async -> [FlightAutocompleteItem] {
         await withCheckedContinuation { continuation in
             FlightSwaggerClient.ApiAPI.apiAutocompleteList(
-                country: self.user.getEffectiveCountry(),
+                country: User.shared.getEffectiveCountry(),
                 search: query,
-                language: self.user.getEffectiveLanguage()
+                language: User.shared.getEffectiveLanguage()
             ) { data, error in
                 if let error = error {
+#if DEBUG
                     print("Autocomplete error: \(error)")
+                    print("Response data: \(String(describing: data))")
+#endif
                 }
                 
                 continuation.resume(returning: data?.data ?? [])
@@ -61,23 +63,23 @@ public class FlightSession {
     
     public func searchInit(requestBody: FlightFlightSearchRequestBodyModel) async throws {
         return try await withCheckedThrowingContinuation { continuation in
-            let userId = try? user.getUserId()
+            let userId = try? User.shared.getUserId()
             guard userId != nil else {
                 continuation.resume(throwing: UnhandledErrors.userNotSet)
                 return
             }
             FlightSwaggerClient.ApiAPI.apiSearchCreate(
                 data: requestBody,
-                country: self.user.getEffectiveCountry(),
+                country: User.shared.getEffectiveCountry(),
                 userId: userId!,
-                language: self.user.getEffectiveLanguage(),
+                language: User.shared.getEffectiveLanguage(),
                 appCode: self.appCode
             ) { data, error in
                 if let error = error {
                     continuation.resume(throwing: error)
                     return
                 }
-                                
+                
                 if let searchId = data?.searchId {
                     self.searchId = searchId
                     continuation.resume()
