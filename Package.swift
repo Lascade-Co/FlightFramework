@@ -1,11 +1,10 @@
+// swift-tools-version:5.5
 //
 //  Package.swift
 //  FlightFramework
 //
 //  Created by Rohit T P on 14/06/25.
 //
-
-// swift-tools-version:5.5
 import PackageDescription
 
 let package = Package(
@@ -20,14 +19,15 @@ let package = Package(
     ],
     dependencies: [
         // Add FlightSwaggerClient dependency
-        .package(url: "https://github.com/Lascade-Co/FlightSwaggerClient.git", from: "1.0.0")
+        .package(url: "https://github.com/Lascade-Co/FlightSwaggerClient.git", .branch("main")),
+        .package(url: "https://github.com/Lascade-Co/TravelCommon.git", .branch("main"))
         // OR if using local package:
         // .package(path: "../FlightSwaggerClient")
     ],
     targets: [
         .target(
             name: "FlightFramework",
-            dependencies: ["FlightSwaggerClient"],
+            dependencies: ["FlightSwaggerClient", "TravelCommon"],
             path: "FlightFramework",
                         swiftSettings: [
                             .unsafeFlags([
