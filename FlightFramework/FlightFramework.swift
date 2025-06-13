@@ -8,32 +8,25 @@
 import Foundation
 
 import FlightSwaggerClient
+import TravelCommon
 
 
 class FlightSession {
-    private var country: String
-    private var language: String
-    private var appCode: String
-    
-    private var userId: String?
+    private var user = User.shared
     private var searchId: String?
+    private let appCode: String
     
-    init(appCode: String, country: String, language: String) {
-        self.country = country
-        self.language = language
+    init(appCode: String) {
         self.appCode = appCode
     }
-    
-    public func setUserId(_ userId: String) {
-        self.userId = userId
-    }
+
     
     public func getAutocomplete(query: String) async -> [FlightAutocompleteItem] {
         await withCheckedContinuation { continuation in
             FlightSwaggerClient.ApiAPI.apiAutocompleteList(
-                country: self.country,
+                country: self.user.getEffectiveCountry(),
                 search: query,
-                language: self.language
+                language: self.user.getEffectiveLanguage()
             ) { data, error in
                 if let error = error {
                     print("Autocomplete error: \(error)")
@@ -67,12 +60,19 @@ class FlightSession {
     }
     
     public func searchInit(requestBody: FlightFlightSearchRequestBodyModel) async throws {
-        if self.userId == nil {
-            throw UnhandledErrors.userNotSet
-        }
-        
         return try await withCheckedThrowingContinuation { continuation in
-            FlightSwaggerClient.ApiAPI.apiSearchCreate(data: requestBody, country: self.country, userId: self.userId!, language: self.language, appCode: self.appCode) { data, error in
+            let userId = try? user.getUserId()
+            guard userId != nil else {
+                continuation.resume(throwing: UnhandledErrors.userNotSet)
+                return
+            }
+            FlightSwaggerClient.ApiAPI.apiSearchCreate(
+                data: requestBody,
+                country: self.user.getEffectiveCountry(),
+                userId: userId!,
+                language: self.user.getEffectiveLanguage(),
+                appCode: self.appCode
+            ) { data, error in
                 if let error = error {
                     continuation.resume(throwing: error)
                     return
