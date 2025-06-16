@@ -1,0 +1,42 @@
+{
+  "originHash" : "eee161d6e345415781ab5ac2541904c96179452657e70b1d34cf3c67d32d4c76",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "747c8db8d57b68d5e35275f10c92d55f982adbd4",
+        "version" : "4.9.1"
+      }
+    },
+    {
+      "identity" : "commonswaggerclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Lascade-Co/CommonSwaggerClient.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "1668bfe33d9c14331ca4d60fd80a2bdce30d5ea5"
+      }
+    },
+    {
+      "identity" : "flightswaggerclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Lascade-Co/FlightSwaggerClient.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "4484d561d012889de0d0deefc66b011518d9a8e3"
+      }
+    },
+    {
+      "identity" : "travelcommon",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Lascade-Co/TravelCommon",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5c4317dc91ecb254a40da67ef18388a86ef0e50d"
+      }
+    }
+  ],
+  "version" : 3
+}

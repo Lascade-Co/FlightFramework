@@ -5,7 +5,7 @@
 //  Created by Rohit T P on 14/06/25.
 //
 
-public enum UnhandledErrors: Error {
+public enum UnhandledErrors: Error, Equatable {
     case userNotSet
     case apiError(String)
     case toastableError(toast: String, error: ToastableErrorType)

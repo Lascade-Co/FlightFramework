@@ -45,7 +45,7 @@ public class FlightSession {
     // MARK: Poll -------------------------------------------------------------
     public func poll(requestBody: FlightPollRequestBodyModel, page: Int, limit: Int = 30) async throws -> FlightPollResponseBodyModel {
         // 1. Preconditions
-        guard let searchId else {
+        guard searchId != nil else {
             throw UnhandledErrors.searchNotStarted
         }
         if let expiry = validUntil, Date() > expiry {

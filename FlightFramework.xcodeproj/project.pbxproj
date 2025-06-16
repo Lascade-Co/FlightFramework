@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CA888C72E006C6000C1D214 /* FlightFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA888BC2E006C6000C1D214 /* FlightFramework.framework */; };
+		1CA888E02E006E0F00C1D214 /* TravelCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 1CA888DF2E006E0F00C1D214 /* TravelCommon */; };
+		1CA888E22E006E1300C1D214 /* FlightSwaggerClient in Frameworks */ = {isa = PBXBuildFile; productRef = 1CA888E12E006E1300C1D214 /* FlightSwaggerClient */; };
+		1CA888E42E006E1A00C1D214 /* TravelCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 1CA888E32E006E1A00C1D214 /* TravelCommon */; };
+		1CA888E62E006E1D00C1D214 /* FlightSwaggerClient in Frameworks */ = {isa = PBXBuildFile; productRef = 1CA888E52E006E1D00C1D214 /* FlightSwaggerClient */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CA888C82E006C6000C1D214 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C89B4EE2DFCCFB100BA13B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CA888BB2E006C6000C1D214;
+			remoteInfo = FlightFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CA888BC2E006C6000C1D214 /* FlightFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlightFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CA888C62E006C6000C1D214 /* FlightFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1CA888BD2E006C6000C1D214 /* FlightFramework */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FlightFramework;
+			sourceTree = "<group>";
+		};
+		1CA888CA2E006C6000C1D214 /* FlightFrameworkTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FlightFrameworkTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CA888B92E006C6000C1D214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA888E22E006E1300C1D214 /* FlightSwaggerClient in Frameworks */,
+				1CA888E02E006E0F00C1D214 /* TravelCommon in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CA888C32E006C6000C1D214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA888C72E006C6000C1D214 /* FlightFramework.framework in Frameworks */,
+				1CA888E42E006E1A00C1D214 /* TravelCommon in Frameworks */,
+				1CA888E62E006E1D00C1D214 /* FlightSwaggerClient in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C89B4ED2DFCCFB100BA13B8 = {
+			isa = PBXGroup;
+			children = (
+				1CA888BD2E006C6000C1D214 /* FlightFramework */,
+				1CA888CA2E006C6000C1D214 /* FlightFrameworkTests */,
+				1CA888DE2E006E0F00C1D214 /* Frameworks */,
+				1C89B4F72DFCCFB100BA13B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C89B4F72DFCCFB100BA13B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CA888BC2E006C6000C1D214 /* FlightFramework.framework */,
+				1CA888C62E006C6000C1D214 /* FlightFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CA888DE2E006E0F00C1D214 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1CA888B72E006C6000C1D214 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1CA888BB2E006C6000C1D214 /* FlightFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CA888CD2E006C6000C1D214 /* Build configuration list for PBXNativeTarget "FlightFramework" */;
+			buildPhases = (
+				1CA888B72E006C6000C1D214 /* Headers */,
+				1CA888B82E006C6000C1D214 /* Sources */,
+				1CA888B92E006C6000C1D214 /* Frameworks */,
+				1CA888BA2E006C6000C1D214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1CA888BD2E006C6000C1D214 /* FlightFramework */,
+			);
+			name = FlightFramework;
+			packageProductDependencies = (
+				1CA888DF2E006E0F00C1D214 /* TravelCommon */,
+				1CA888E12E006E1300C1D214 /* FlightSwaggerClient */,
+			);
+			productName = FlightFramework;
+			productReference = 1CA888BC2E006C6000C1D214 /* FlightFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1CA888C52E006C6000C1D214 /* FlightFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CA888D02E006C6000C1D214 /* Build configuration list for PBXNativeTarget "FlightFrameworkTests" */;
+			buildPhases = (
+				1CA888C22E006C6000C1D214 /* Sources */,
+				1CA888C32E006C6000C1D214 /* Frameworks */,
+				1CA888C42E006C6000C1D214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CA888C92E006C6000C1D214 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1CA888CA2E006C6000C1D214 /* FlightFrameworkTests */,
+			);
+			name = FlightFrameworkTests;
+			packageProductDependencies = (
+				1CA888E32E006E1A00C1D214 /* TravelCommon */,
+				1CA888E52E006E1D00C1D214 /* FlightSwaggerClient */,
+			);
+			productName = FlightFrameworkTests;
+			productReference = 1CA888C62E006C6000C1D214 /* FlightFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C89B4EE2DFCCFB100BA13B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					1CA888BB2E006C6000C1D214 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					1CA888C52E006C6000C1D214 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = 1C89B4F12DFCCFB100BA13B8 /* Build configuration list for PBXProject "FlightFramework" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C89B4ED2DFCCFB100BA13B8;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1C89B5062DFCCFC700BA13B8 /* XCRemoteSwiftPackageReference "TravelCommon" */,
+				1CA888DD2E006DC900C1D214 /* XCRemoteSwiftPackageReference "FlightSwaggerClient" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1C89B4F72DFCCFB100BA13B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CA888BB2E006C6000C1D214 /* FlightFramework */,
+				1CA888C52E006C6000C1D214 /* FlightFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CA888BA2E006C6000C1D214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CA888C42E006C6000C1D214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CA888B82E006C6000C1D214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CA888C22E006C6000C1D214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CA888C92E006C6000C1D214 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CA888BB2E006C6000C1D214 /* FlightFramework */;
+			targetProxy = 1CA888C82E006C6000C1D214 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C89B5012DFCCFB200BA13B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ZG6QASWQ43;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C89B5022DFCCFB200BA13B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ZG6QASWQ43;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CA888CE2E006C6000C1D214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZG6QASWQ43;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lascade.FlightFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1CA888CF2E006C6000C1D214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZG6QASWQ43;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lascade.FlightFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1CA888D12E006C6000C1D214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZG6QASWQ43;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lascade.FlightFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CA888D22E006C6000C1D214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZG6QASWQ43;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lascade.FlightFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C89B4F12DFCCFB100BA13B8 /* Build configuration list for PBXProject "FlightFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C89B5012DFCCFB200BA13B8 /* Debug */,
+				1C89B5022DFCCFB200BA13B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CA888CD2E006C6000C1D214 /* Build configuration list for PBXNativeTarget "FlightFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CA888CE2E006C6000C1D214 /* Debug */,
+				1CA888CF2E006C6000C1D214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CA888D02E006C6000C1D214 /* Build configuration list for PBXNativeTarget "FlightFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CA888D12E006C6000C1D214 /* Debug */,
+				1CA888D22E006C6000C1D214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C89B5062DFCCFC700BA13B8 /* XCRemoteSwiftPackageReference "TravelCommon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Lascade-Co/TravelCommon";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		1CA888DD2E006DC900C1D214 /* XCRemoteSwiftPackageReference "FlightSwaggerClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Lascade-Co/FlightSwaggerClient";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1CA888DF2E006E0F00C1D214 /* TravelCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C89B5062DFCCFC700BA13B8 /* XCRemoteSwiftPackageReference "TravelCommon" */;
+			productName = TravelCommon;
+		};
+		1CA888E12E006E1300C1D214 /* FlightSwaggerClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CA888DD2E006DC900C1D214 /* XCRemoteSwiftPackageReference "FlightSwaggerClient" */;
+			productName = FlightSwaggerClient;
+		};
+		1CA888E32E006E1A00C1D214 /* TravelCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C89B5062DFCCFC700BA13B8 /* XCRemoteSwiftPackageReference "TravelCommon" */;
+			productName = TravelCommon;
+		};
+		1CA888E52E006E1D00C1D214 /* FlightSwaggerClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CA888DD2E006DC900C1D214 /* XCRemoteSwiftPackageReference "FlightSwaggerClient" */;
+			productName = FlightSwaggerClient;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1C89B4EE2DFCCFB100BA13B8 /* Project object */;
+}
